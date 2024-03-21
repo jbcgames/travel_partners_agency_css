@@ -1,0 +1,69 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Alineamos los enlaces verticalmente */
+}
+
+/* Estilos para los enlaces */
+nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px; /* Espacio entre los enlaces */
+    color: #333; /* Color del texto */
+    border-right: 100px;
+    font-weight: bold; /* Texto en negrita */
+}
+nav a:hover {
+    background-color: white;
+    
+    font-weight: bold;
+    font-size:0px;
+  }
+  .Pais.Egipto:hover {
+    background-image: url("sites/resources/images/flags/bandera 1.png"); /* Ruta de la imagen */
+    background-size:cover;
+    width: 100px;
+    height: 63px;
+  }
+  .Pais.Argentina:hover {
+    background-image: url("sites/resources/images/flags/bandera 2.png"); /* Ruta de la imagen */
+    background-size:cover;
+    width: 100px;
+    height: 63px;
+  }
+  .Pais.Venezuela:hover {
+    background-image: url("sites/resources/images/flags/bandera 3.webp"); /* Ruta de la imagen */
+    background-size:cover;
+    width: 100px;
+    height: 63px;
+  }
+  .Pais.Alemania:hover {
+    background-image: url("sites/resources/images/flags/bandera 4.png"); /* Ruta de la imagen */
+    background-size:cover;
+    width: 100px;
+    height: 63px;
+  }
+  .Pais.Japon:hover {
+    background-image: url("sites/resources/images/flags/bandera 5.webp"); /* Ruta de la imagen */  
+    background-size:cover;
+    width: 100px;
+    height: 63px;
+}
+  .Pais.Chile:hover {
+    background-image: url("sites/resources/images/flags/bandera 6.png"); /* Ruta de la imagen */
+    background-size:cover;
+    width: 100px;
+    height: 63px;
+  }
+  .acerca:hover {
+    border-radius: 8px;
+    border: 3px rgb(0, 0, 0) solid;
+    font-size:30px;
+  }
