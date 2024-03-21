@@ -217,5 +217,26 @@ nav_lateral a:hover{
     border-right: 100px;
     font-weight: bold; /* Texto en negrita */
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    
+    
 }
+#Itinerario h1{
+  text-align: center;
+  border: 10px solid yellow;
+  border-radius: 10%;
+  background-color: yellow;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+#Itinerario p{
+  border: 10px solid yellow;
+  border-radius: 10%;
+  background-color: yellow;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.tela .texto2{
+  display:none;
+}
+
