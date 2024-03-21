@@ -3,7 +3,7 @@ nav {
     top: 10px;
     right: 15px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -15,7 +15,7 @@ nav a {
     text-decoration: none;
     margin-right: 15px;
     font-family: 'Comic Sans MS';
-    text-shadow: 1px 1px #333;
+    text-shadow: 1px 1px #ffffff;
     margin-left: 15px; /* Espacio entre los enlaces */
     color: #2f3536; /* Color del texto */
     border-right: 100px;
@@ -24,6 +24,7 @@ nav a {
 }
 nav a:hover {
     font-weight: bold;
+    border: 2px solid #d3babad2;
     font-size:0px;
   }
   .Pais.Egipto:hover {
@@ -70,20 +71,34 @@ nav a:hover {
     font-size:30px;
   }
   .Principal {
-    width: 100%; /* Ancho del 100% para que se adapte al contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
+    height: 760px; /* Altura automática para mantener la proporción */
+    width: 100%; /* Ajusta el ancho de la imagen según tus necesidades */
+    object-fit: cover; 
     display: block; /* Asegura que la imagen se muestre como bloque */
     margin-top: 0; /* Elimina el margen superior para que esté en la parte superior */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 1%;
+
   }
   /* Estilos para el contenedor */
 /* Estilos para el texto */
 .image-text {
   position: absolute;
   font-family: 'Comic Sans MS';
-  top: -50px; /* Ajusta la posición vertical según tu preferencia */
-  left: 20px; /* Ajusta la posición horizontal según tu preferencia */
+  top: -10px; /* Ajusta la posición vertical según tu preferencia */
+  left: 70px; /* Ajusta la posición horizontal según tu preferencia */
   color: white; /* Color del texto */
   text-shadow: 4px 4px #333;
   font-size: 75px; /* Tamaño de fuente */
   font-weight: bold; /* Peso de la fuente */
+}
+html {
+  /*overflow: hidden;*/
+}
+nav_lateral a{
+  position: relative;
+  top: 200px;
+  font-size: 45px;
+  color: rgb(203, 211, 219);
+  text-decoration: none;
 }
