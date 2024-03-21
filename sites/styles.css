@@ -1,6 +1,6 @@
 nav {
     position: fixed;
-    top: 10px;
+    top: 30px;
     right: 15px;
     padding: 10px;
     border: 3px solid #ccc;
@@ -15,9 +15,9 @@ nav a {
     text-decoration: none;
     margin-right: 15px;
     font-family: 'Comic Sans MS';
-    text-shadow: 1px 1px #ffffff;
+    text-shadow: 2px 2px #000000;
     margin-left: 15px; /* Espacio entre los enlaces */
-    color: #2f3536; /* Color del texto */
+    color: #ffffff; /* Color del texto */
     border-right: 100px;
     font-weight: bold; /* Texto en negrita */
     font-size: 20px;
@@ -71,34 +71,151 @@ nav a:hover {
     font-size:30px;
   }
   .Principal {
-    height: 760px; /* Altura automática para mantener la proporción */
-    width: 100%; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 150px; /* Altura automática para mantener la proporción */
+    width: 99%; /* Ajusta el ancho de la imagen según tus necesidades */
     object-fit: cover; 
     display: block; /* Asegura que la imagen se muestre como bloque */
     margin-top: 0; /* Elimina el margen superior para que esté en la parte superior */
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     border-radius: 1%;
+    top: 5px;
+    position:fixed;
+    background-color: white;
 
   }
   /* Estilos para el contenedor */
 /* Estilos para el texto */
 .image-text {
-  position: absolute;
+  position: fixed;
   font-family: 'Comic Sans MS';
-  top: -10px; /* Ajusta la posición vertical según tu preferencia */
+  top: -40px; /* Ajusta la posición vertical según tu preferencia */
   left: 70px; /* Ajusta la posición horizontal según tu preferencia */
   color: white; /* Color del texto */
   text-shadow: 4px 4px #333;
   font-size: 75px; /* Tamaño de fuente */
   font-weight: bold; /* Peso de la fuente */
 }
-html {
-  /*overflow: hidden;*/
+nav_lateral {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comic Sans MS';
+  top: 160px;
+  left: 10px; /* Ajusta la posición vertical según tu preferencia */
+  color: white; /* Color del texto */
+  text-shadow: 4px 4px #333333;
+  border: 3px solid #ccc;
+  padding: 3px;
+  box-shadow: 2px 5px 5px rgb(0, 0, 0);
+  text-align: center;
+  width: auto;
+  font-size: 32px; /* Tamaño de fuente */
+  border-radius: 10px;
+  font-weight: bold; /* Peso de la fuente */
 }
 nav_lateral a{
-  position: relative;
-  top: 200px;
-  font-size: 45px;
-  color: rgb(203, 211, 219);
+  color: white; /* Color del texto */
   text-decoration: none;
+  border-radius: 10px;
+}
+nav_lateral a:hover{
+  font-size: 44px; /* Tamaño de fuente */
+  background-color:#db74c1;
+}
+
+#Atractivos {
+  margin-top: 160px;
+  padding-left: 140px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, 400px);
+  grid-gap: 10px;
+  width: auto;
+  border-radius: 3%;
+  background-color: #aa770a;
+  border: 50px solid #b88e05; 
+}
+
+#Atractivos img{
+  align-items: center;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  box-shadow: 5px 5px 2px rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+
+}
+#Atractivos .cell .ima1{
+  margin-top: 80px;
+}
+
+#Atractivos .cell .ima2{
+  margin-left: 20px;
+}
+#Atractivos .cell .ima3{
+  margin-left: -50px;
+  margin-top: 30px;
+}
+#Atractivos .cell .ima4{
+  margin-left: -40px;
+}
+#Atractivos .cell:hover img{
+  opacity: 0.5;
+}
+
+#Atractivos .texto {
+ 
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: -360px;
+  margin-left: 50px;
+  width: 470px;
+  display:none;
+  font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px #000000;
+    color: #ffffff; /* Color del texto */
+    border-right: 100px;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;
+}
+
+#Atractivos .cell:hover .texto {
+  display:grid;
+  position: relative;
+
+}
+#Atractivos .texto1 {
+ 
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: -300px;
+  margin-left: 10px;
+ width: 470px;
+  display:none;
+  font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px #000000;
+
+    color: #ffffff; /* Color del texto */
+    border-right: 100px;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;
+}
+
+#Atractivos .cell:hover .texto1 {
+  display:grid;
+  position: relative;
+}
+
+#Itinerario{
+  font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px #000000;
+
+    color: #ffffff; /* Color del texto */
+    border-right: 100px;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;
+    text-align: center;
 }
