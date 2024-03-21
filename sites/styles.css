@@ -236,7 +236,11 @@ nav_lateral a:hover{
   margin-left: 250px;
   margin-right: 250px;
 }
-.tela .texto2{
-  display:none;
+.texto2{
+  display: none;
+}
+#Itinerario p:hover .tela{
+  display:grid;
+  position: relative;
 }
 
