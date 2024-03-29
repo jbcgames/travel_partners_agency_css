@@ -1,69 +1,143 @@
 nav {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row; /* Alineamos los enlaces verticalmente */
+  position: fixed;
+  z-index: 999;
+  bottom: 300px;
+  right: 30px;
+  padding: 10px;
+  border: 3px solid #74d860;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row; /* Alineamos los enlaces verticalmente */
 }
 
 /* Estilos para los enlaces */
 nav a {
-    text-decoration: none;
-    margin-right: 15px;
-    margin-left: 15px; /* Espacio entre los enlaces */
-    color: #333; /* Color del texto */
-    border-right: 100px;
-    font-weight: bold; /* Texto en negrita */
+  text-decoration: none;
+  margin-right: 15px;
+  font-family: 'Comic Sans MS';
+  text-shadow: 2px 2px #000000;
+  margin-left: 15px; /* Espacio entre los enlaces */
+  color: #ffffff; /* Color del texto */
+  border-right: 100px;
+  font-weight: bold; /* Texto en negrita */
+  font-size: 45px;
+  
 }
-nav a:hover {
-    background-color: white;
-    
-    font-weight: bold;
-    font-size:0px;
-  }
-  .Pais.Egipto:hover {
-    background-image: url("sites/resources/images/flags/bandera 1.png"); /* Ruta de la imagen */
-    background-size:cover;
-    width: 100px;
-    height: 63px;
-  }
-  .Pais.Argentina:hover {
-    background-image: url("sites/resources/images/flags/bandera 2.png"); /* Ruta de la imagen */
-    background-size:cover;
-    width: 100px;
-    height: 63px;
-  }
-  .Pais.Venezuela:hover {
-    background-image: url("sites/resources/images/flags/bandera 3.webp"); /* Ruta de la imagen */
-    background-size:cover;
-    width: 100px;
-    height: 63px;
-  }
-  .Pais.Alemania:hover {
-    background-image: url("sites/resources/images/flags/bandera 4.png"); /* Ruta de la imagen */
-    background-size:cover;
-    width: 100px;
-    height: 63px;
-  }
-  .Pais.Japon:hover {
-    background-image: url("sites/resources/images/flags/bandera 5.webp"); /* Ruta de la imagen */  
-    background-size:cover;
-    width: 100px;
-    height: 63px;
+
+.Pais.Egipto:hover {
+  border-radius: 8px;
+  border: 3px rgb(251, 255, 1) solid;
+  font-size:50px;
+  color: rgb(251, 255, 1); /* Color del texto */
 }
-  .Pais.Chile:hover {
-    background-image: url("sites/resources/images/flags/bandera 6.png"); /* Ruta de la imagen */
-    background-size:cover;
-    width: 100px;
-    height: 63px;
-  }
-  .acerca:hover {
-    border-radius: 8px;
-    border: 3px rgb(0, 0, 0) solid;
-    font-size:30px;
-  }
+.Pais.Argentina:hover {
+  border-radius: 8px;
+  border: 3px rgb(0, 204, 255) solid;
+  font-size:50px;
+  color: rgb(0, 204, 255); /* Color del texto */
+}
+.Pais.Venezuela:hover {
+  border-radius: 8px;
+  border: 3px rgb(25, 0, 255) solid;
+  font-size:50px;
+  color: rgb(25, 0, 255); /* Color del texto */
+}
+.Pais.Alemania:hover {
+  border-radius: 8px;
+  border: 3px rgb(255, 0, 0) solid;
+  font-size:50px;
+  color: rgb(255, 0, 0); /* Color del texto */
+}
+.Pais.Japon:hover {
+  border-radius: 8px;
+  border: 3px rgb(172, 172, 172) solid;
+  font-size:50px;
+  color: rgb(172, 172, 172); /* Color del texto */
+}
+.Pais.Chile:hover {
+  border-radius: 8px;
+  border: 3px rgb(172, 72, 72) solid;
+  font-size:50px;
+  color: rgb(172, 72, 72); /* Color del texto */
+}
+.acerca:hover {
+  border-radius: 8px;
+  border: 3px rgb(0, 0, 0) solid;
+  font-size:50px;
+  color: rgb(66, 66, 66); 
+}
+.acerca{
+  transition: font-size 0.3s ease-in-out;
+}
+.Pais.Egipto{
+  transition: font-size 0.3s ease-in-out;
+}
+.Pais.Argentina{
+  transition: font-size 0.3s ease-in-out;
+}
+.Pais.Venezuela {
+  transition: font-size 0.3s ease-in-out;
+}
+.Pais.Alemania{
+  transition: font-size 0.3s ease-in-out;
+}
+.Pais.Japon {
+  transition: font-size 0.3s ease-in-out;
+}
+.Pais.Chile {
+  transition: font-size 0.3s ease-in-out;
+}
+.acerca{
+  transition: font-size 0.3s ease-in-out;
+}
+.Principal {
+  justify-content: center;
+  z-index: 999;
+  height: 80%; /* Altura automática para mantener la proporción */
+  width: 99%; /* Ajusta el ancho de la imagen según tus necesidades */
+  object-fit: cover; 
+  display: block; /* Asegura que la imagen se muestre como bloque */
+  margin-top: 0; /* Elimina el margen superior para que esté en la parte superior */
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 1%;
+  top:50px;
+  position:fixed;
+  background-color: white;
+
+}
+.image-text {
+  z-index: 999;
+  position: fixed;
+  font-family: 'Comic Sans MS';
+
+  top: 120px; /* Ajusta la posición vertical según tu preferencia */
+  left: 450px; /* Ajusta la posición horizontal según tu preferencia */
+  color: white; /* Color del texto */
+  text-shadow: 4px 4px #333;
+  font-size: 75px; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de la fuente */
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+html{
+  background-color: rgb(4, 255, 46);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fadeIn ease 2s;
+
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
