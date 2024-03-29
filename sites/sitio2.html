@@ -1,6 +1,52 @@
 <!doctype html>
 <html lang="es-ES">
   <head>
+    <style>
+      #Atractivos {
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+      }
+    #Itinerario h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Itinerario p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Itinerario{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgba(255, 251, 0, 0.623);
+  }
+  #Costos{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos a{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos h2{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Video{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  footer{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  </style>
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/262/262569.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -57,36 +103,87 @@
               </a>
     </nav_lateral>
   </header>
+
   <main>
     <article>
+      
       <section id="Atractivos">
-        <h1>Atractivos de Argentina</h1>
+        <div class="cell">
+            <img class="ima2" src="https://pictures.tripmasters.com/images/packages/argentina/buenosairesobelisco-500.jpg"/>
+            <div class="texto">Buenos Aires
+                <br><br>
+                Buenos Aires, conocida como la "París de Sudamérica", es famosa por su arquitectura neoclásica y sus museos de vanguardia[^1^][2].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima1" src="https://www.submarinoviagens.com.br/bora-nessa-trip/wp-content/uploads/2019/12/buenos-aires-994648380.jpg"/>
+            <div class="texto">San Carlos de Bariloche
+                <br><br>
+                San Carlos de Bariloche, en la región de los lagos de Argentina, ofrece vistas espectaculares de montañas nevadas, bosques milenarios y lagos cristalinos[^2^][3].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima3" src="https://lp-cms-production.imgix.net/2019-06/48035960.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4"/>
+            <div class="texto1">Salta
+                <br><br>
+                Salta, apodada "Salta la Linda", es famosa por su patrimonio histórico y paisajes naturales. Ofrece una vasta oferta de actividades relacionadas al ecoturismo, aguas termales y rutas del vino[^3^][4].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima4" src="https://gopatagonic.com/wp-content/uploads/2019/03/Ushuaia.jpg"/>
+            <div class="texto1">Ushuaia
+                 <br><br>
+                 Ushuaia, considerada la ciudad más austral del mundo, se sitúa en los últimos tramos de la Cordillera de los Andes, en la zona conocida como Tierra del Fuego[^3^][4].
+            </div>
+        </div>
+    </section>
+    
+    <section id="Itinerario">
+      <h1>Itinerario de 5 días y 4 noches en Argentina</h1>
+      <div class="tela">
+          <p>Día 1: Visita a Buenos Aires</p>
+          <div class="texto2">Comenzamos nuestro viaje en la vibrante ciudad de Buenos Aires, donde exploraremos sus barrios históricos y disfrutaremos de su rica cultura culinaria.</div>
+      </div>
+      <div class="tela">
+          <p>Día 2: Excursión a las Cataratas del Iguazú</p>
+          <div class="texto2">Viajaremos al norte para visitar las impresionantes Cataratas del Iguazú, una de las maravillas naturales más espectaculares del mundo.</div>
+      </div>
+      <div class="tela">
+          <p>Día 3: Descubriendo Mendoza</p>
+          <div class="texto2">Nos dirigiremos al oeste hacia Mendoza, famosa por sus viñedos. Aquí, disfrutaremos de una cata de vinos y aprenderemos sobre la producción de vino local.</div>
+      </div>
+      <div class="tela">
+          <p>Día 4: Aventura en Bariloche</p>
+          <div class="texto2">Continuaremos nuestro viaje hacia el sur hasta Bariloche, donde disfrutaremos de actividades al aire libre en el impresionante paisaje de la Patagonia.</div>
+      </div>
+      <div class="tela">
+          <p>Día 5: Regreso a Buenos Aires</p>
+          <div class="texto2">En nuestro último día, regresaremos a Buenos Aires, donde tendremos tiempo libre para comprar recuerdos antes de nuestro vuelo de regreso a casa.</div>
+      </div>
+  </section>
+  
+        <section id="Costos">
+        <h2>Costos y detalles</h2>
         <ul>
-            <li>Las Cataratas del Iguazú</li>
-            <li>El Glaciar Perito Moreno</li>
-            <li>La Ciudad de Buenos Aires</li>
+            <h1>Vuelos</h1>
+            <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+            <a href="/sites/subsite2/v1.html">Ver más</a>
+            <h1>Hoteles</h1>
+            <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+            <a href="/sites/subsite2/v2.html">Ver más</a>
+            <h1>Entradas a sitios turísticos</h1>
+            <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+            <a href="/sites/subsite2/v3.html">Ver más</a>
+            <h1>Traslados</h1>
+            <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+            <a href="/sites/subsite2/v4.html">Ver más</a>
         </ul>
-      </section >
-          <section id="Itinerario">
-        <h1>Itinerario de 5 días y 4 noches</h1>
-        <p>Día 1: Llegada a Buenos Aires y exploración de la ciudad.</p>
-        <p>Día 2: Viaje a las Cataratas del Iguazú.</p>
-        <p>Día 3: Maravíllate con el Glaciar Perito Moreno en El Calafate.</p>
-        <p>Día 4: Disfruta de la cultura y la gastronomía porteña.</p>
-        <p>Día 5: Regreso a casa con recuerdos inolvidables.</p>
-          </section>
-          <section id="Costos">
-        <h1>Costos y detalles</h1>
-        <p>Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
-        <ul>
-            <li>Vuelos</li>
-            <li>Hoteles</li>
-            <li>Entradas a sitios turísticos</li>
-            <li>Traslados</li>
-        </ul>
-      </section>
+        </section>
     </article>
-  </main>
+    </main>
+
+
+
   <aside>
     <section id="Video">
      <iframe width="560" height="315" src="https://www.youtube.com/embed/NrvXE1HbmEQ?si=CSA1AvzmCFFVhsxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

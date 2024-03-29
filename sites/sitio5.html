@@ -1,6 +1,52 @@
 <!doctype html>
 <html lang="es-ES">
   <head>
+    <style>
+      #Atractivos {
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+      }
+    #Itinerario h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Itinerario p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Itinerario{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgba(255, 251, 0, 0.623);
+  }
+  #Costos{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos a{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos h2{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Video{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  footer{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  </style>
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/262/262569.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -61,30 +107,76 @@
   <main>
     <article>
       <section id="Atractivos">
-        <h1>Atractivos de Japón</h1>
-        <ul>
-            <li>El Templo Kinkaku-ji en Kioto</li>
-            <li>El Monte Fuji</li>
-            <li>El Barrio de Shinjuku en Tokio</li>
-        </ul>
-      </section>
-          <section id="Itinerario">
-        <h1>Itinerario de 5 días y 4 noches</h1>
-        <p>Día 1: Llegada a Tokio y exploración de Shinjuku.</p>
-        <p>Día 2: Viaje a Kioto y visita al Templo Kinkaku-ji.</p>
-        <p>Día 3: Excursión al Monte Fuji.</p>
-        <p>Día 4: Descubre la cultura tradicional en Kioto.</p>
-        <p>Día 5: Regreso a casa con recuerdos inolvidables.</p>
-          </section>
-          <section id="Costos">
-        <h1>Costos y detalles</h1>
-        <p>Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
-        <ul>
-            <li>Vuelos</li>
-            <li>Hoteles</li>
-            <li>Entradas a sitios turísticos</li>
-            <li>Traslados</li>
-        </ul>
+        <div class="cell">
+            <img class="ima2" src="https://franks-travelbox.com/wp-content/uploads/2017/11/japan-tokio-der-skytree-in-tokio-ist-mit-634-metern-der-hocc88chste-turm-der-welt-japan-skyearth-shutterstock.jpg"/>
+            <div class="texto">Tokio
+                <br><br>
+                Tokio es conocida por ser una metrópolis dinámica y futurista. Cuenta con una mezcla única de estilos, y los antiguos templos ocultos se funden con la gran arquitectura moderna[^1^][2].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima1" src="https://photos.tui.fr/vnf/Produits/JPNCTSOL-circuits-japon-tui.jpg?i10c=img.resize(width:750,height:500)"/>
+            <div class="texto">Kioto
+                <br><br>
+                Kioto fue el centro cultural del país durante unos mil años. Una visita al Palacio Imperial atestigua la antigua importancia política de la ciudad[^2^][3].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima3" src="https://www.maravillasdelatierra.com/wp-content/uploads/2020/01/monte-fuji-002.jpg"/>
+            <div class="texto1">Monte Fuji
+                <br><br>
+                El Monte Fuji, un volcán activo de 3776 metros de altura, es el punto más alto del país. Está en el centro de Japón a 120 kilómetros de Tokio, su capital[^3^][4].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima4" src="https://skyticket.jp/contents-image/iStock-516181902.jpg"/>
+            <div class="texto1">Tsumago
+                 <br><br>
+                 Tsumago es uno de los pueblos que conserva su esencia de la época. No verás cableado eléctrico en sitios públicos ni vehículos transitar por sus principales calles[^3^][4].
+            </div>
+        </div>
+    </section>
+    
+    <section id="Itinerario">
+      <h1>Itinerario de 5 días y 4 noches en Japón</h1>
+      <div class="tela">
+          <p>Día 1: Explorando Tokio</p>
+          <div class="texto2">Comenzamos nuestro viaje en la capital, Tokio. Aquí, exploraremos sus lugares históricos como el Templo Senso-ji y disfrutaremos de su vibrante vida nocturna en Shibuya.</div>
+      </div>
+      <div class="tela">
+          <p>Día 2: Visita a Kioto</p>
+          <div class="texto2">Nos dirigiremos al oeste para visitar Kioto, donde disfrutaremos de sus hermosos templos y jardines, como el Templo Kinkaku-ji y el Jardín de Roca de Ryoan-ji.</div>
+      </div>
+      <div class="tela">
+          <p>Día 3: Aventura en Nara</p>
+          <div class="texto2">Viajaremos al sur para visitar Nara, conocida por sus impresionantes templos y su parque de ciervos.</div>
+      </div>
+      <div class="tela">
+          <p>Día 4: Descubriendo Osaka</p>
+          <div class="texto2">Continuaremos nuestro viaje hacia Osaka, donde disfrutaremos de su famosa comida callejera y visitaremos el impresionante Castillo de Osaka.</div>
+      </div>
+      <div class="tela">
+          <p>Día 5: Regreso a Tokio</p>
+          <div class="texto2">En nuestro último día, regresaremos a Tokio, donde tendremos tiempo libre para comprar recuerdos antes de nuestro vuelo de regreso a casa.</div>
+      </div>
+  </section>
+  
+      <section id="Costos">
+      <h2>Costos y detalles</h2>
+      <ul>
+          <h1>Vuelos</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite5/v1.html">Ver más</a>
+          <h1>Hoteles</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite5/v2.html">Ver más</a>
+          <h1>Entradas a sitios turísticos</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite5/v3.html">Ver más</a>
+          <h1>Traslados</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite5/v4.html">Ver más</a>
+      </ul>
       </section>
       </article>
       </main>

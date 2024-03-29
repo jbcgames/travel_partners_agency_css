@@ -1,6 +1,52 @@
 <!doctype html>
 <html lang="es-ES">
   <head>
+    <style>
+      #Atractivos {
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+      }
+    #Itinerario h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Itinerario p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Itinerario{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgba(255, 251, 0, 0.623);
+  }
+  #Costos{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos a{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos h2{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Video{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  footer{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  </style>
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/262/262569.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -60,30 +106,76 @@
   <main>
     <article>
       <section id="Atractivos">
-        <h1>Atractivos de Chile</h1>
-        <ul>
-            <li>El Desierto de Atacama</li>
-            <li>La Patagonia</li>
-            <li>La Isla de Chiloé</li>
-        </ul>
-      </section>
-          <section id="Itinerario">
-        <h1>Itinerario de 5 días y 4 noches</h1>
-        <p>Día 1: Llegada a Santiago y exploración de la ciudad.</p>
-        <p>Día 2: Viaje al Desierto de Atacama y observación de estrellas.</p>
-        <p>Día 3: Exploración de la mágica Isla de Chiloé.</p>
-        <p>Día 4: Trekking en la Patagonia.</p>
-        <p>Día 5: Regreso a casa con recuerdos inolvidables.</p>
-          </section>
-          <section id="Costos">
-        <h1>Costos y detalles</h1>
-        <p>Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
-        <ul>
-            <li>Vuelos</li>
-            <li>Hoteles</li>
-            <li>Entradas a sitios turísticos</li>
-            <li>Traslados</li>
-        </ul>
+        <div class="cell">
+            <img class="ima2" src="https://www.civitatis.com/blog/wp-content/uploads/2012/12/shutterstock_1282092994-1280x972.jpg"/>
+            <div class="texto">Santiago de Chile
+                <br><br>
+                Santiago de Chile, la capital y centro económico de Chile, es el núcleo político y cultural del país. Cuenta con muchos restaurantes, monumentos, centros comerciales y museos[^1^][2].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima1" src="https://img.theculturetrip.com/x/smart/wp-content/uploads/2017/01/santiago.jpg"/>
+            <div class="texto">Viña del Mar
+                <br><br>
+                Viña del Mar es una ciudad costera de Chile que ofrece una mezcla de belleza natural, patrimonio cultural y entretenimiento moderno. Puedes disfrutar del sol y la arena en sus playas prístinas[^2^][3].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima3" src="https://destinationsmagazine.com/wp-content/uploads/2018/09/Santiago-Skyline-iStock-683769012-JoseStephens.jpg"/>
+            <div class="texto1">San Pedro de Atacama
+                <br><br>
+                San Pedro de Atacama, situado en el desierto de Atacama, es conocido por su pintoresco paisaje de casitas blancas, estrechas calles y enormes montañas[^3^][4].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima4" src="https://www.traveloffpath.com/wp-content/uploads/2020/12/Santiago-Chile-at-sunset-600x521.jpg"/>
+            <div class="texto1">Parque Nacional Lauca
+                 <br><br>
+                 El Parque Nacional Lauca se encuentra situado en la comuna de Putre, dentro del Altiplano Chileno. Es famoso por su sorprendente ecosistema[^3^][4].
+            </div>
+        </div>
+    </section>
+    <section id="Itinerario">
+      <h1>Itinerario de 5 días y 4 noches en Chile</h1>
+      <div class="tela">
+          <p>Día 1: Explorando Santiago</p>
+          <div class="texto2">Comenzamos nuestro viaje en la capital, Santiago. Aquí, exploraremos sus lugares históricos como el Palacio de La Moneda y disfrutaremos de su vibrante vida nocturna en Bellavista.</div>
+      </div>
+      <div class="tela">
+          <p>Día 2: Visita a Valparaíso</p>
+          <div class="texto2">Nos dirigiremos a la costa para visitar Valparaíso, una ciudad portuaria llena de coloridos murales y casas colgantes.</div>
+      </div>
+      <div class="tela">
+          <p>Día 3: Aventura en el Desierto de Atacama</p>
+          <div class="texto2">Viajaremos al norte para visitar el Desierto de Atacama, el desierto más seco del mundo, donde disfrutaremos de su impresionante paisaje lunar.</div>
+      </div>
+      <div class="tela">
+          <p>Día 4: Descubriendo la Patagonia</p>
+          <div class="texto2">Continuaremos nuestro viaje hacia el sur hasta la Patagonia, donde disfrutaremos de actividades al aire libre en el impresionante Parque Nacional Torres del Paine.</div>
+      </div>
+      <div class="tela">
+          <p>Día 5: Regreso a Santiago</p>
+          <div class="texto2">En nuestro último día, regresaremos a Santiago, donde tendremos tiempo libre para comprar recuerdos antes de nuestro vuelo de regreso a casa.</div>
+      </div>
+  </section>
+  
+    
+      <section id="Costos">
+      <h2>Costos y detalles</h2>
+      <ul>
+          <h1>Vuelos</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite6/v1.html">Ver más</a>
+          <h1>Hoteles</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite6/v2.html">Ver más</a>
+          <h1>Entradas a sitios turísticos</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite6/v3.html">Ver más</a>
+          <h1>Traslados</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite6/v4.html">Ver más</a>
+      </ul>
       </section>
       </article>
       </main>

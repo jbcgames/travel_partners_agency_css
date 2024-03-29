@@ -1,6 +1,52 @@
 <!doctype html>
 <html lang="es-ES">
   <head>
+    <style>
+      #Atractivos {
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+      }
+    #Itinerario h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Itinerario p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Itinerario{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos h1{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgba(255, 251, 0, 0.623);
+  }
+  #Costos{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  #Costos p{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos a{
+    border: 10px solid rgb(126, 126, 95);
+    background-color: rgb(145, 145, 56);
+  }
+  #Costos h2{
+    border: 10px solid rgb(177, 177, 16);
+    background-color: rgb(255, 251, 0);
+  }
+  #Video{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  footer{
+    background-color: #aa770a;
+    border: 50px solid #b88e05; 
+  }
+  </style>
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/262/262569.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -60,32 +106,76 @@
   <main>
     <article>
       <section id="Atractivos">
-        <h1>Atractivos de Venezuela</h1>
-        <ul>
-            <li>Los Roques: Archipiélago paradisíaco</li>
-            <li>Salto Ángel: La cascada más alta del mundo</li>
-            <li>Los Médanos de Coro: Desierto de dunas</li>
-        </ul>
-      </section>
-          <section id="Itinerario">
-
-        <h1>Itinerario de 5 días y 4 noches</h1>
-        <p>Día 1: Llegada a Caracas y exploración de la ciudad.</p>
-        <p>Día 2: Visita a Los Roques para disfrutar de sus playas.</p>
-        <p>Día 3: Excursión al Salto Ángel en Canaima.</p>
-        <p>Día 4: Aventura en los Médanos de Coro.</p>
-        <p>Día 5: Regreso a casa con recuerdos inolvidables.</p>
-
-          </section>
-          <section id="Costos">
-        <h1>Costos y detalles</h1>
-        <p>Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
-        <ul>
-            <li>Vuelos</li>
-            <li>Hoteles</li>
-            <li>Entradas a sitios turísticos</li>
-            <li>Traslados</li>
-        </ul>
+        <div class="cell">
+            <img class="ima2" src="https://www.worldatlas.com/upload/bc/66/ac/juan-griego-bay-margarita-island-venezuela-paolo-costa.jpg"/>
+            <div class="texto">Isla de Margarita
+                <br><br>
+                La Isla de Margarita, rodeada por las aguas turquesas del mar Caribe, es famosa por su litoral de ensueño, playas paradisiacas, lujosas infraestructuras hoteleras y pintorescas bahías de pescadores[^1^][2].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima1" src="https://albertopomares.com/wp-content/uploads/2020/03/EL-AVILA-030.jpg"/>
+            <div class="texto">Caracas
+                <br><br>
+                Caracas, la capital de Venezuela, es conocida por su gastronomía maravillosa, animada vida nocturna, excelentes museos y exquisita arquitectura[^2^][3].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima3" src="https://media.gettyimages.com/id/1147449098/photo/aerial-view-of-a-white-sand-cay-in-the-caribbean-sea-with-turquoise-waters.jpg?b=1&s=170667a&w=0&k=20&c=t9M_cmNjXcJq8W_OOFyfZU-JVn8Vf9PHDOokwFG14XM="/>
+            <div class="texto1">Parque Nacional Morrocoy
+                <br><br>
+                El Parque Nacional Morrocoy se localiza en la parte noreste de Venezuela. Domina una zona de manglares, nutridos islotes y cayos con bellas playas de arena[^3^][4].
+            </div>
+        </div>
+        <div class="cell">
+            <img class="ima4" src="https://siemprevenezuelaweb.com/wp-content/uploads/2022/10/Los-Medanos-de-Coro-el-magico-desierto-venezolano-web.jpg"/>
+            <div class="texto1">Médanos de Coro
+                 <br><br>
+                 Los Médanos de Coro son un panorama espectacular, principalmente porque se encuentran ubicadas en lo que es básicamente un país tropical[^4^][5].
+            </div>
+        </div>
+    </section>
+    
+    <section id="Itinerario">
+      <h1>Itinerario de 5 días y 4 noches en Venezuela</h1>
+      <div class="tela">
+          <p>Día 1: Explorando Caracas</p>
+          <div class="texto2">Comenzamos nuestro viaje en la capital, Caracas. Aquí, exploraremos sus lugares históricos y disfrutaremos de su vibrante vida nocturna.</div>
+      </div>
+      <div class="tela">
+          <p>Día 2: Visita al Parque Nacional Morrocoy</p>
+          <div class="texto2">Nos dirigiremos a la costa para visitar el Parque Nacional Morrocoy, donde disfrutaremos de sus hermosas playas y arrecifes de coral.</div>
+      </div>
+      <div class="tela">
+          <p>Día 3: Aventura en el Salto Ángel</p>
+          <div class="texto2">Viajaremos al sur para visitar el Salto Ángel, la cascada más alta del mundo, ubicada en el Parque Nacional Canaima.</div>
+      </div>
+      <div class="tela">
+          <p>Día 4: Descubriendo Los Roques</p>
+          <div class="texto2">Continuaremos nuestro viaje hacia el Archipiélago Los Roques, un paraíso para los amantes del buceo y el snorkel.</div>
+      </div>
+      <div class="tela">
+          <p>Día 5: Regreso a Caracas</p>
+          <div class="texto2">En nuestro último día, regresaremos a Caracas, donde tendremos tiempo libre para comprar recuerdos antes de nuestro vuelo de regreso a casa.</div>
+      </div>
+  </section>
+  
+      <section id="Costos">
+      <h2>Costos y detalles</h2>
+      <ul>
+          <h1>Vuelos</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite3/v1.html">Ver más</a>
+          <h1>Hoteles</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite3/v2.html">Ver más</a>
+          <h1>Entradas a sitios turísticos</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite3/v3.html">Ver más</a>
+          <h1>Traslados</h1>
+          <p id="descripcion1">Los costos varían según la temporada y el tipo de alojamiento. Incluyen:</p>
+          <a href="/sites/subsite3/v4.html">Ver más</a>
+      </ul>
       </section>
     </article>
   </main>
