@@ -145,7 +145,7 @@ nav_lateral a:hover{
   grid-auto-rows: minmax(100px, 400px);
   grid-gap: 10px;
   width: auto;
-  border-radius: 3%;
+
 }
 
 #Atractivos img{
@@ -233,7 +233,7 @@ nav_lateral a:hover{
     font-weight: bold; /* Texto en negrita */
     font-size: 20px;
     text-align: left;
-    
+border: 10px ;
     
 }
 #Itinerario h1{
@@ -280,3 +280,54 @@ body {
   100% {opacity:1;}
 }
 
+
+#Costos{
+
+  font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px #000000;
+    color: #ffffff; /* Color del texto */
+    border-right: 100px;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;
+    text-align: left;
+border: 10px ;
+    
+}
+#Costos h1{
+  text-align: center;
+  border-radius: 10%;
+
+  margin-left: 200px;
+  margin-right: 250px;
+}
+#Costos p{
+  border-radius: 10%;
+  margin-left: 200px;
+  margin-right: 250px;
+}
+#Costos a{
+  border-radius: 10%;
+  margin-left: 200px;
+  font-size: 15;
+  color: white;
+  margin-right: 250px;
+  text-decoration: none;
+}
+#Costos h2{
+  text-align: center;
+  border-radius: 10%;
+
+  margin-left: 240px;
+  margin-right: 250px;
+}
+#Video{
+
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  padding: 20px;
+}
+footer{
+  padding: 15px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
