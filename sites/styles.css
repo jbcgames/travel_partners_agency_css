@@ -1,5 +1,6 @@
 nav {
     position: fixed;
+    z-index: 999;
     top: 30px;
     right: 15px;
     padding: 10px;
@@ -21,6 +22,7 @@ nav a {
     border-right: 100px;
     font-weight: bold; /* Texto en negrita */
     font-size: 20px;
+    
 }
 nav a:hover {
     font-weight: bold;
@@ -70,7 +72,11 @@ nav a:hover {
     border: 3px rgb(0, 0, 0) solid;
     font-size:30px;
   }
+  .acerca{
+    transition: font-size 0.3s ease-in-out;
+  }
   .Principal {
+    z-index: 999;
     height: 150px; /* Altura automática para mantener la proporción */
     width: 99%; /* Ajusta el ancho de la imagen según tus necesidades */
     object-fit: cover; 
@@ -78,7 +84,7 @@ nav a:hover {
     margin-top: 0; /* Elimina el margen superior para que esté en la parte superior */
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     border-radius: 1%;
-    top: 5px;
+    top:0px;
     position:fixed;
     background-color: white;
 
@@ -86,16 +92,18 @@ nav a:hover {
   /* Estilos para el contenedor */
 /* Estilos para el texto */
 .image-text {
+  z-index: 999;
   position: fixed;
   font-family: 'Comic Sans MS';
-  top: -40px; /* Ajusta la posición vertical según tu preferencia */
-  left: 70px; /* Ajusta la posición horizontal según tu preferencia */
+  top: -60px; /* Ajusta la posición vertical según tu preferencia */
+  left: 10px; /* Ajusta la posición horizontal según tu preferencia */
   color: white; /* Color del texto */
   text-shadow: 4px 4px #333;
   font-size: 75px; /* Tamaño de fuente */
   font-weight: bold; /* Peso de la fuente */
 }
 nav_lateral {
+  z-index: 999;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -109,6 +117,7 @@ nav_lateral {
   box-shadow: 2px 5px 5px rgb(0, 0, 0);
   text-align: center;
   width: auto;
+  transition: scroll-behavior 0.5s ease-in-out;
   font-size: 32px; /* Tamaño de fuente */
   border-radius: 10px;
   font-weight: bold; /* Peso de la fuente */
@@ -117,6 +126,7 @@ nav_lateral a{
   color: white; /* Color del texto */
   text-decoration: none;
   border-radius: 10px;
+  transition: font-size 0.3s ease-in-out;
 }
 nav_lateral a:hover{
   font-size: 44px; /* Tamaño de fuente */
@@ -124,6 +134,7 @@ nav_lateral a:hover{
 }
 
 #Atractivos {
+  z-index: 1000;
   margin-top: 160px;
   padding-left: 140px;
   padding-top: 20px;
@@ -135,16 +146,16 @@ nav_lateral a:hover{
   grid-gap: 10px;
   width: auto;
   border-radius: 3%;
-  background-color: #aa770a;
-  border: 50px solid #b88e05; 
 }
 
 #Atractivos img{
+  
   align-items: center;
   border: 3px solid #000000;
   border-radius: 25px;
   box-shadow: 5px 5px 2px rgb(0, 0, 0);
   width: 100%;
+  transition: opacity 0.5s ease-in-out; /* Transición suave */
   height: 100%;
 
 }
@@ -173,7 +184,8 @@ nav_lateral a:hover{
   margin-top: -360px;
   margin-left: 50px;
   width: 470px;
-  display:none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   font-family: 'Comic Sans MS';
     text-shadow: 2px 2px #000000;
     color: #ffffff; /* Color del texto */
@@ -183,7 +195,7 @@ nav_lateral a:hover{
 }
 
 #Atractivos .cell:hover .texto {
-  display:grid;
+  opacity: 1;
   position: relative;
 
 }
@@ -194,25 +206,28 @@ nav_lateral a:hover{
   margin-top: -300px;
   margin-left: 10px;
  width: 470px;
-  display:none;
+ position: relative;
+ overflow: hidden;
   font-family: 'Comic Sans MS';
     text-shadow: 2px 2px #000000;
-
+    opacity: 0;
     color: #ffffff; /* Color del texto */
     border-right: 100px;
     font-weight: bold; /* Texto en negrita */
     font-size: 20px;
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+   
 }
 
 #Atractivos .cell:hover .texto1 {
-  display:grid;
+
+  opacity: 1;
   position: relative;
 }
 
 #Itinerario{
   font-family: 'Comic Sans MS';
     text-shadow: 2px 2px #000000;
-
     color: #ffffff; /* Color del texto */
     border-right: 100px;
     font-weight: bold; /* Texto en negrita */
@@ -223,24 +238,45 @@ nav_lateral a:hover{
 }
 #Itinerario h1{
   text-align: center;
-  border: 10px solid yellow;
   border-radius: 10%;
-  background-color: yellow;
+
   margin-left: 250px;
   margin-right: 250px;
 }
 #Itinerario p{
-  border: 10px solid yellow;
   border-radius: 10%;
-  background-color: yellow;
   margin-left: 250px;
   margin-right: 250px;
 }
 .texto2{
   display: none;
+  opacity: 0;
+  text-align: center;
+  margin-left: 350px;
+  margin-right: 250px;
+  background-color: rgb(153, 152, 152);
+  border: 10px solid rgb(150, 150, 141);
+  border-radius: 10%;
 }
-#Itinerario p:hover .tela{
-  display:grid;
-  position: relative;
+
+.tela:hover .texto2 {
+  display: grid;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.5s ease; /* Transición suave */
+  opacity: 1; /* Mostrar cuando se pasa el mouse */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fadeIn ease 2s;
+
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
